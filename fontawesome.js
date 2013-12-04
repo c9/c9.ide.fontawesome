@@ -25,7 +25,7 @@ define(function(require, exports, module) {
             if (loaded) return false;
             loaded = true;
             
-            ui.insertCss(require("text!./css/font-awesome.css").replace(/@\{base-path\}/g,  options.staticPrefix), null, plugin);
+            ui.insertCss(require("text!./css/font-awesome.css").replace(/@\{base-path\}/g,  options.staticPrefix), false, plugin);
         }
         
         /***** Lifecycle *****/
