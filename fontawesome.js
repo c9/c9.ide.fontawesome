@@ -1,11 +1,3 @@
-/**
- * This is an example of an almost minimal implementation of a plugin.
- * Check out [the source](source/template_minimal.html)
- *
- * @class Template
- * @extends Plugin
- * @singleton
- */
 define(function(require, exports, module) {
     "use strict";    
     main.consumes = ["Plugin", "ui"];
@@ -25,7 +17,9 @@ define(function(require, exports, module) {
             if (loaded) return false;
             loaded = true;
             
-            ui.insertCss(require("text!./css/font-awesome.css").replace(/@\{base-path\}/g,  options.staticPrefix), false, plugin);
+            var css = require("text!./css/font-awesome.css")
+                .replace(/@\{base-path\}/g,  options.staticPrefix)
+            ui.insertCss(css, false, plugin);
         }
         
         /***** Lifecycle *****/
