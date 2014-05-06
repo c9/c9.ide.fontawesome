@@ -6,7 +6,7 @@ define(function(require, exports, module) {
 
     function main(options, imports, register) {
         var Plugin = imports.Plugin;
-        var ui     = imports.ui;
+        var ui = imports.ui;
         
         /***** Initialization *****/
         
