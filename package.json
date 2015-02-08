@@ -9,14 +9,12 @@
         "url": "http://github.com/c9/c9.ide.fontawesome.git"
     },
     "plugins": {
-        "plugin": {
-            "fontawesome": {}
-        }
+        "fontawesome": {}
     },
     "categories": [
         "core"
     ],
     "licenses": [
-        ""
+        "MIT"
     ]
 }
