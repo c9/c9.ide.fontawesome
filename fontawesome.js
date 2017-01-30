@@ -18,17 +18,17 @@ define(function(require, exports, module) {
             loaded = true;
             
             var css = require("text!./css/font-awesome.css")
-                .replace(/@\{base-path\}/g,  options.staticPrefix)
+                .replace(/@\{base-path\}/g, options.staticPrefix);
             ui.insertCss(css, false, plugin);
         }
         
         /***** Lifecycle *****/
         
-        plugin.on("load", function(){
+        plugin.on("load", function() {
             load();
         });
         
         plugin.freezePublicAPI({});
-        register(null, { "fontawesome" : plugin });
+        register(null, { "fontawesome": plugin });
     }
 });
